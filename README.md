@@ -16,8 +16,8 @@ Project 4: Build a web application that provides a list of items within a variet
 
 5. The categoryitems.db database is prepopulated with default categories and items and ready to use. If you need to reinitialize the database, delete the existing categoryitems.db then run the following commands:
 	
-	python database_setup.py
-	python lotsofitems.py 
+- python database_setup.py
+- python lotsofitems.py 
 
 6. Run the application with python application.py from within the directory.
 
