@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<div class="row banner home">
+	<div class="col-md-1"></div>
+	<div class="col-md-11 padding-none">
+		<h1>Welcome!</h1>
+	</div>
+</div>
+<div class="row banner">
+	<div class="col-md-12">
+		<h3>We search the world to bring you vibrant flowering annuals, perennials and shrubs that deliver the most beautiful garden performance.</h3>
+	</div>
+</div>
+<div class = 'flash'>
+{% with messages = get_flashed_messages() %}
+	{% if messages %}
+	<ul>
+	{% for message in messages %}
+		<li> <strong> {{ message }} </strong> </li>
+	{% endfor %}
+	</ul>
+	{% endif %}
+{% endwith %}
+</div>
+{% endblock %}
